@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://b3pq6lm6yutmt"]
+
+[ext_resource type="AudioStream" uid="uid://c73cslrqwcdtr" path="res://TestingAssets/753372__looplicator__192-bpm-industrial-drum-loop-4696-wav.mp3" id="1_vdaef"]
+
+[sub_resource type="AudioStreamPlaylist" id="AudioStreamPlaylist_64t70"]
+stream_count = 1
+stream_0 = ExtResource("1_vdaef")
+
+[node name="AudioManager" type="AudioStreamPlayer"]
+stream = SubResource("AudioStreamPlaylist_64t70")
+volume_db = -10.0
+pitch_scale = 0.46
+autoplay = true

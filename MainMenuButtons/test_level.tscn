@@ -1,0 +1,61 @@
+[gd_scene load_steps=10 format=3 uid="uid://bl2ytglphdm7s"]
+
+[ext_resource type="Texture2D" uid="uid://dpn73mdpbvem" path="res://icon.svg" id="1_dd2xb"]
+[ext_resource type="PackedScene" uid="uid://b3pq6lm6yutmt" path="res://MainMenuButtons/audio_manager.tscn" id="1_jto6r"]
+[ext_resource type="Script" path="res://MainMenuButtons/brightness_node.gd" id="1_x1v2y"]
+[ext_resource type="Script" path="res://MainMenuButtons/audio_manager.gd" id="2_dxvoo"]
+[ext_resource type="Script" path="res://MainMenuButtons/start_game.gd" id="2_jwgxu"]
+[ext_resource type="Script" path="res://MainMenuButtons/option.gd" id="2_v6rq2"]
+[ext_resource type="Script" path="res://MainMenuButtons/quit.gd" id="3_73mn4"]
+[ext_resource type="PackedScene" uid="uid://djatcc6gf38yl" path="res://MainMenuButtons/OptionsMenu/options_menu.tscn" id="6_h7ybi"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_ynuew"]
+blend_mode = 3
+
+[node name="TestLevel" type="Node2D"]
+
+[node name="AudioManager" parent="." instance=ExtResource("1_jto6r")]
+script = ExtResource("2_dxvoo")
+
+[node name="BrightnessNode" type="ColorRect" parent="."]
+material = SubResource("CanvasItemMaterial_ynuew")
+use_parent_material = true
+offset_right = 1149.0
+offset_bottom = 645.0
+color = Color(0.529067, 0.529067, 0.529067, 1)
+script = ExtResource("1_x1v2y")
+
+[node name="StartGame" type="TextureButton" parent="BrightnessNode"]
+modulate = Color(0, 0.388235, 1, 1)
+layout_mode = 0
+offset_left = 987.0
+offset_top = 487.0
+offset_right = 1115.0
+offset_bottom = 615.0
+texture_normal = ExtResource("1_dd2xb")
+script = ExtResource("2_jwgxu")
+
+[node name="Quit" type="TextureButton" parent="BrightnessNode"]
+modulate = Color(1, 0, 1, 1)
+layout_mode = 0
+offset_right = 128.0
+offset_bottom = 128.0
+texture_normal = ExtResource("1_dd2xb")
+script = ExtResource("3_73mn4")
+
+[node name="Option" type="TextureButton" parent="BrightnessNode" node_paths=PackedStringArray("options_menu")]
+layout_mode = 0
+offset_left = 977.0
+offset_top = 16.0
+offset_right = 1105.0
+offset_bottom = 144.0
+texture_normal = ExtResource("1_dd2xb")
+script = ExtResource("2_v6rq2")
+options_menu = NodePath("../../OptionsMenu")
+
+[node name="OptionsMenu" parent="." instance=ExtResource("6_h7ybi")]
+visible = false
+
+[connection signal="pressed" from="BrightnessNode/StartGame" to="BrightnessNode/StartGame" method="_on_pressed"]
+[connection signal="pressed" from="BrightnessNode/Quit" to="BrightnessNode/Quit" method="_on_pressed"]
+[connection signal="pressed" from="BrightnessNode/Option" to="BrightnessNode/Option" method="_on_pressed"]

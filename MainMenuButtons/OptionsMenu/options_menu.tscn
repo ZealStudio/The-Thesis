@@ -1,0 +1,73 @@
+[gd_scene load_steps=5 format=3 uid="uid://djatcc6gf38yl"]
+
+[ext_resource type="Script" path="res://MainMenuButtons/OptionsMenu/brightness_slider.gd" id="1_fuwg1"]
+[ext_resource type="Texture2D" uid="uid://dpn73mdpbvem" path="res://icon.svg" id="2_oiar4"]
+[ext_resource type="Script" path="res://MainMenuButtons/OptionsMenu/exit_menu.gd" id="3_1wk5w"]
+[ext_resource type="Script" path="res://MainMenuButtons/OptionsMenu/volume_slider.gd" id="4_ejk1r"]
+
+[node name="OptionsMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="OptionsTransBG" type="ColorRect" parent="."]
+modulate = Color(0.815686, 0.796078, 0.811765, 0.670588)
+layout_mode = 0
+offset_right = 1147.0
+offset_bottom = 647.0
+
+[node name="ExitMenu" type="TextureButton" parent="." node_paths=PackedStringArray("options_menu")]
+modulate = Color(0.619608, 0.823529, 0.690196, 1)
+layout_mode = 0
+offset_left = 1036.0
+offset_top = 10.0
+offset_right = 1136.0
+offset_bottom = 103.0
+texture_normal = ExtResource("2_oiar4")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("3_1wk5w")
+options_menu = NodePath("..")
+
+[node name="BrightnessLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 66.0
+offset_top = 469.0
+offset_right = 155.0
+offset_bottom = 492.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Brightness"
+
+[node name="BrightnessSlider" type="HSlider" parent="."]
+layout_mode = 0
+offset_left = 233.0
+offset_top = 443.0
+offset_right = 918.0
+offset_bottom = 520.0
+value = 50.0
+script = ExtResource("1_fuwg1")
+
+[node name="VolumeLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 67.0
+offset_top = 435.0
+offset_right = 152.0
+offset_bottom = 458.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Volume"
+
+[node name="VolumeSlider" type="HSlider" parent="."]
+layout_mode = 0
+offset_left = 233.0
+offset_top = 436.0
+offset_right = 913.0
+offset_bottom = 452.0
+value = 50.0
+script = ExtResource("4_ejk1r")
+
+[connection signal="pressed" from="ExitMenu" to="ExitMenu" method="_on_pressed"]
+[connection signal="value_changed" from="BrightnessSlider" to="BrightnessSlider" method="_on_value_changed"]
+[connection signal="value_changed" from="VolumeSlider" to="VolumeSlider" method="_on_value_changed"]
