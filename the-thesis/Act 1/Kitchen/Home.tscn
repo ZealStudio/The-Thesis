@@ -1,9 +1,9 @@
-[gd_scene load_steps=4 format=4 uid="uid://dt5dv2u21d5th"]
+[gd_scene load_steps=4 format=4 uid="uid://deiya5vmb6n2g"]
 
-[ext_resource type="Texture2D" uid="uid://chi2r2f4bf572" path="res://Assets/Art/Background Art/Kitchen sprite sheet.png" id="1_raiem"]
+[ext_resource type="Texture2D" uid="uid://chi2r2f4bf572" path="res://Assets/Art/Background Art/Kitchen sprite sheet.png" id="1_xlo4r"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qfg22"]
-texture = ExtResource("1_raiem")
+texture = ExtResource("1_xlo4r")
 0:0/0 = 0
 1:0/0 = 0
 1:1/0 = 0
@@ -11,10 +11,18 @@ texture = ExtResource("1_raiem")
 2:1/0 = 0
 3:1/0 = 0
 3:0/0 = 0
-0:2/0 = 0
-1:2/0 = 0
 1:3/0 = 0
 0:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+5:3/0 = 0
+5:4/0 = 0
+3:4/0 = 0
+2:4/0 = 0
+1:4/0 = 0
+0:4/0 = 0
+6:4/0 = 0
+6:3/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_ot6vu"]
 sources/0 = SubResource("TileSetAtlasSource_qfg22")
@@ -28,14 +36,21 @@ tile_map_data = PackedByteArray("AAAAAAMAAAAAAAAAAAABAAMAAAAAAAAAAAACAAMAAAAAAAA
 tile_set = SubResource("TileSet_ot6vu")
 
 [node name="TileMapLayerFloor" type="TileMapLayer" parent="."]
+z_index = 2
+texture_filter = 1
+scale = Vector2(3.6087, 3.38095)
+tile_map_data = PackedByteArray("AAACAAMAAAAAAAMAAAACAAQAAAAAAAQAAAADAAMAAAABAAMAAAADAAQAAAABAAQAAAABAAMAAAACAAMAAAABAAQAAAACAAQAAAAEAAMAAAADAAMAAAAEAAQAAAADAAQAAAAGAAIAAAAFAAMAAAAGAAMAAAAFAAQAAAAFAAIAAAAGAAMAAAAFAAMAAAAGAAQAAAA=")
+tile_set = SubResource("TileSet_ot6vu")
+
+[node name="TileMapLayerFloorBg" type="TileMapLayer" parent="."]
 z_index = 1
 texture_filter = 1
 scale = Vector2(3.6087, 3.38095)
-tile_map_data = PackedByteArray("AAACAAMAAAAAAAIAAAACAAQAAAAAAAMAAAADAAMAAAABAAIAAAADAAQAAAABAAMAAAA=")
+tile_map_data = PackedByteArray("AAABAAIAAAACAAMAAAABAAMAAAACAAQAAAAEAAIAAAADAAMAAAAEAAMAAAADAAQAAAA=")
 tile_set = SubResource("TileSet_ot6vu")
 
 [node name="TileMapLayerRoof" type="TileMapLayer" parent="."]
-z_index = 2
+z_index = 5
 texture_filter = 1
 scale = Vector2(3.6087, 3.38095)
 tile_set = SubResource("TileSet_ot6vu")
