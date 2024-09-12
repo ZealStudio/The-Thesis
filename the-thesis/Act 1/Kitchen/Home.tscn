@@ -84,7 +84,7 @@ tile_set = SubResource("TileSet_ot6vu")
 z_index = 1
 texture_filter = 1
 scale = Vector2(3.6087, 3.38095)
-tile_map_data = PackedByteArray("AAAMAAQAAAACAAMAAAAMAAUAAAACAAQAAAAPAAQAAAADAAMAAAAPAAUAAAADAAQAAAA=")
+tile_map_data = PackedByteArray("AAAMAAQAAAACAAMAAAAMAAUAAAACAAQAAAAPAAQAAAADAAMAAAAPAAUAAAADAAQAAAARAAcAAAAHAAAAAAA=")
 tile_set = SubResource("TileSet_ot6vu")
 
 [node name="TileMapLayerRoof" type="TileMapLayer" parent="."]
