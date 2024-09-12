@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://djatcc6gf38yl"]
+[gd_scene load_steps=6 format=3 uid="uid://djatcc6gf38yl"]
 
 [ext_resource type="Script" path="res://MainMenuButtons/OptionsMenu/brightness_slider.gd" id="1_fuwg1"]
 [ext_resource type="Texture2D" uid="uid://dpn73mdpbvem" path="res://icon.svg" id="2_oiar4"]
 [ext_resource type="Script" path="res://MainMenuButtons/OptionsMenu/exit_menu.gd" id="3_1wk5w"]
 [ext_resource type="Script" path="res://MainMenuButtons/OptionsMenu/volume_slider.gd" id="4_ejk1r"]
+[ext_resource type="Script" path="res://MainMenuButtons/OptionsMenu/keybinds_button.gd" id="5_uoo37"]
 
 [node name="OptionsMenu" type="Control"]
 layout_mode = 3
@@ -68,6 +69,16 @@ offset_bottom = 452.0
 value = 50.0
 script = ExtResource("4_ejk1r")
 
+[node name="KeybindsButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 49.0
+offset_top = 273.0
+offset_right = 277.0
+offset_bottom = 353.0
+text = "Change Default Keybinds"
+script = ExtResource("5_uoo37")
+
 [connection signal="pressed" from="ExitMenu" to="ExitMenu" method="_on_pressed"]
 [connection signal="value_changed" from="BrightnessSlider" to="BrightnessSlider" method="_on_value_changed"]
 [connection signal="value_changed" from="VolumeSlider" to="VolumeSlider" method="_on_value_changed"]
+[connection signal="pressed" from="KeybindsButton" to="KeybindsButton" method="_on_pressed"]

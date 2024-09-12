@@ -1,0 +1,217 @@
+[gd_scene load_steps=2 format=3 uid="uid://c1cnkrrtlvw1l"]
+
+[ext_resource type="Script" path="res://MainMenuButtons/OptionsMenu/KeybindSettings/keybind_settings.gd" id="1_k8c1b"]
+
+[node name="KeybindSettings" type="Control" node_paths=PackedStringArray("forward_button", "backward_button")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_k8c1b")
+forward_button = NodePath("ScrollContainer/HBoxContainer/VBoxButtons/ForwardButton")
+backward_button = NodePath("ScrollContainer/HBoxContainer/VBoxButtons/BackwardButton")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+layout_mode = 0
+offset_left = 58.0
+offset_top = 85.0
+offset_right = 1075.0
+offset_bottom = 356.0
+metadata/_edit_group_ = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="VBoxLabels" type="VBoxContainer" parent="ScrollContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/VBoxLabels"]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+text = "Walk Forward"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="ScrollContainer/HBoxContainer/VBoxLabels"]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+text = "Walk Backward"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="ScrollContainer/HBoxContainer/VBoxLabels"]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+text = "Walk Right"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label4" type="Label" parent="ScrollContainer/HBoxContainer/VBoxLabels"]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+text = "Walk Left"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label5" type="Label" parent="ScrollContainer/HBoxContainer/VBoxLabels"]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+text = "Test Keybind"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label6" type="Label" parent="ScrollContainer/HBoxContainer/VBoxLabels"]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+text = "Test Keybind"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label7" type="Label" parent="ScrollContainer/HBoxContainer/VBoxLabels"]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+text = "Test Keybind"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label8" type="Label" parent="ScrollContainer/HBoxContainer/VBoxLabels"]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+text = "Test Keybind"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label9" type="Label" parent="ScrollContainer/HBoxContainer/VBoxLabels"]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+text = "Test Keybind"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label10" type="Label" parent="ScrollContainer/HBoxContainer/VBoxLabels"]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+text = "Test Keybind"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label11" type="Label" parent="ScrollContainer/HBoxContainer/VBoxLabels"]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+text = "Test Keybind"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label12" type="Label" parent="ScrollContainer/HBoxContainer/VBoxLabels"]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+text = "Test Keybind"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label13" type="Label" parent="ScrollContainer/HBoxContainer/VBoxLabels"]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+text = "Test Keybind"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label14" type="Label" parent="ScrollContainer/HBoxContainer/VBoxLabels"]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+text = "Test Keybind"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label15" type="Label" parent="ScrollContainer/HBoxContainer/VBoxLabels"]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+text = "Test Keybind"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label16" type="Label" parent="ScrollContainer/HBoxContainer/VBoxLabels"]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+text = "Test Keybind"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxButtons" type="VBoxContainer" parent="ScrollContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="ForwardButton" type="Button" parent="ScrollContainer/HBoxContainer/VBoxButtons"]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+text = "W"
+
+[node name="BackwardButton" type="Button" parent="ScrollContainer/HBoxContainer/VBoxButtons"]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+text = "S"
+
+[node name="RightButton" type="Button" parent="ScrollContainer/HBoxContainer/VBoxButtons"]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+
+[node name="LeftButton" type="Button" parent="ScrollContainer/HBoxContainer/VBoxButtons"]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+
+[node name="Button5" type="Button" parent="ScrollContainer/HBoxContainer/VBoxButtons"]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+
+[node name="Button6" type="Button" parent="ScrollContainer/HBoxContainer/VBoxButtons"]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+
+[node name="Button7" type="Button" parent="ScrollContainer/HBoxContainer/VBoxButtons"]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+
+[node name="Button8" type="Button" parent="ScrollContainer/HBoxContainer/VBoxButtons"]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+
+[node name="Button9" type="Button" parent="ScrollContainer/HBoxContainer/VBoxButtons"]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+
+[node name="Button10" type="Button" parent="ScrollContainer/HBoxContainer/VBoxButtons"]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+
+[node name="Button11" type="Button" parent="ScrollContainer/HBoxContainer/VBoxButtons"]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+
+[node name="Button12" type="Button" parent="ScrollContainer/HBoxContainer/VBoxButtons"]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+
+[node name="Button13" type="Button" parent="ScrollContainer/HBoxContainer/VBoxButtons"]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+
+[node name="Button14" type="Button" parent="ScrollContainer/HBoxContainer/VBoxButtons"]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+
+[node name="Button15" type="Button" parent="ScrollContainer/HBoxContainer/VBoxButtons"]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+
+[node name="Button16" type="Button" parent="ScrollContainer/HBoxContainer/VBoxButtons"]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+
+[connection signal="pressed" from="ScrollContainer/HBoxContainer/VBoxButtons/ForwardButton" to="." method="_on_forward_button_pressed"]
+[connection signal="pressed" from="ScrollContainer/HBoxContainer/VBoxButtons/BackwardButton" to="." method="_on_backward_button_pressed"]
