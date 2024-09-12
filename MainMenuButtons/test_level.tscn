@@ -1,9 +1,9 @@
 [gd_scene load_steps=10 format=3 uid="uid://bl2ytglphdm7s"]
 
 [ext_resource type="Texture2D" uid="uid://dpn73mdpbvem" path="res://icon.svg" id="1_dd2xb"]
-[ext_resource type="PackedScene" uid="uid://b3pq6lm6yutmt" path="res://MainMenuButtons/audio_manager.tscn" id="1_jto6r"]
+[ext_resource type="PackedScene" uid="uid://b3pq6lm6yutmt" path="res://Audio/audio_manager.tscn" id="1_jto6r"]
 [ext_resource type="Script" path="res://MainMenuButtons/brightness_node.gd" id="1_x1v2y"]
-[ext_resource type="Script" path="res://MainMenuButtons/audio_manager.gd" id="2_dxvoo"]
+[ext_resource type="Script" path="res://Audio/audio_manager.gd" id="2_dxvoo"]
 [ext_resource type="Script" path="res://MainMenuButtons/start_game.gd" id="2_jwgxu"]
 [ext_resource type="Script" path="res://MainMenuButtons/option.gd" id="2_v6rq2"]
 [ext_resource type="Script" path="res://MainMenuButtons/quit.gd" id="3_73mn4"]
