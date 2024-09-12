@@ -17,22 +17,17 @@ blend_mode = 3
 [node name="AudioManager" parent="." instance=ExtResource("1_jto6r")]
 script = ExtResource("2_dxvoo")
 
-[node name="Control" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="BrightnessNode" type="Sprite2D" parent="Control"]
+[node name="BrightnessNode" type="ColorRect" parent="."]
 material = SubResource("CanvasItemMaterial_ynuew")
 use_parent_material = true
-position = Vector2(574, 320)
-scale = Vector2(8.96875, 5.10938)
-texture = ExtResource("1_dd2xb")
+offset_right = 1149.0
+offset_bottom = 645.0
+color = Color(0.529067, 0.529067, 0.529067, 1)
 script = ExtResource("1_x1v2y")
 
-[node name="StartGame" type="TextureButton" parent="Control"]
+[node name="StartGame" type="TextureButton" parent="BrightnessNode"]
 modulate = Color(0, 0.388235, 1, 1)
+layout_mode = 0
 offset_left = 987.0
 offset_top = 487.0
 offset_right = 1115.0
@@ -40,26 +35,27 @@ offset_bottom = 615.0
 texture_normal = ExtResource("1_dd2xb")
 script = ExtResource("2_jwgxu")
 
-[node name="Quit" type="TextureButton" parent="Control"]
+[node name="Quit" type="TextureButton" parent="BrightnessNode"]
 modulate = Color(1, 0, 1, 1)
+layout_mode = 0
 offset_right = 128.0
 offset_bottom = 128.0
 texture_normal = ExtResource("1_dd2xb")
 script = ExtResource("3_73mn4")
 
-[node name="Option" type="TextureButton" parent="Control" node_paths=PackedStringArray("options_menu")]
+[node name="Option" type="TextureButton" parent="BrightnessNode" node_paths=PackedStringArray("options_menu")]
+layout_mode = 0
 offset_left = 977.0
 offset_top = 16.0
 offset_right = 1105.0
 offset_bottom = 144.0
 texture_normal = ExtResource("1_dd2xb")
 script = ExtResource("2_v6rq2")
-options_menu = NodePath("../OptionsMenu")
+options_menu = NodePath("../../OptionsMenu")
 
-[node name="OptionsMenu" parent="Control" instance=ExtResource("6_h7ybi")]
+[node name="OptionsMenu" parent="." instance=ExtResource("6_h7ybi")]
 visible = false
-layout_mode = 1
 
-[connection signal="pressed" from="Control/StartGame" to="Control/StartGame" method="_on_pressed"]
-[connection signal="pressed" from="Control/Quit" to="Control/Quit" method="_on_pressed"]
-[connection signal="pressed" from="Control/Option" to="Control/Option" method="_on_pressed"]
+[connection signal="pressed" from="BrightnessNode/StartGame" to="BrightnessNode/StartGame" method="_on_pressed"]
+[connection signal="pressed" from="BrightnessNode/Quit" to="BrightnessNode/Quit" method="_on_pressed"]
+[connection signal="pressed" from="BrightnessNode/Option" to="BrightnessNode/Option" method="_on_pressed"]
