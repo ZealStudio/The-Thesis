@@ -75,6 +75,7 @@ offset_left = 49.0
 offset_top = 273.0
 offset_right = 277.0
 offset_bottom = 353.0
+texture_normal = ExtResource("2_oiar4")
 script = ExtResource("5_uoo37")
 
 [connection signal="pressed" from="ExitMenu" to="ExitMenu" method="_on_pressed"]
