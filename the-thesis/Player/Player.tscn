@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://bpuxqyq35cwrj"]
+[gd_scene load_steps=5 format=3 uid="uid://bpuxqyq35cwrj"]
 
 [ext_resource type="Script" path="res://the-thesis/Player/player.gd" id="1_kwbks"]
 [ext_resource type="Texture2D" uid="uid://oykb0ntj4lny" path="res://Assets/Art/Background Art/PlayerSpriteSheet-Sheet.png" id="2_m1vde"]
+[ext_resource type="PackedScene" uid="uid://x1daxqpwy6wv" path="res://the-thesis/Player/GameUi.tscn" id="3_elivj"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_5pdag"]
 
@@ -20,4 +21,9 @@ hframes = 11
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite2D"]
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(2.865, 2.865)
+zoom = Vector2(3.75, 3.75)
+
+[node name="Control" parent="." instance=ExtResource("3_elivj")]
+offset_top = 87.0
+offset_bottom = 87.0
+scale = Vector2(0.26698, 0.267858)

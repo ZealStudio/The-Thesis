@@ -1,0 +1,112 @@
+[gd_scene format=3 uid="uid://x1daxqpwy6wv"]
+
+[node name="Control" type="Control"]
+z_index = 10
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect7" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 469.0
+offset_top = -649.0
+offset_right = 509.0
+offset_bottom = -609.0
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(2.76, 12.3636)
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect6" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -574.0
+offset_top = -647.0
+offset_right = -534.0
+offset_bottom = -607.0
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(2.76, 12.3636)
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -574.0
+offset_top = -154.0
+offset_right = 20.0
+grow_horizontal = 2
+grow_vertical = 0
+color = Color(0.556953, 0.556953, 0.556953, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 21.0
+offset_top = -154.0
+offset_right = 577.0
+grow_horizontal = 2
+grow_vertical = 0
+color = Color(0.74558, 0.74558, 0.74558, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 2.0
+offset_top = -154.0
+offset_right = 20.0
+grow_horizontal = 2
+grow_vertical = 0
+color = Color(0.2484, 0.2484, 0.2484, 1)
+
+[node name="ColorRect4" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -561.0
+offset_top = -139.0
+offset_right = -433.0
+offset_bottom = -14.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="ColorRect5" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -420.0
+offset_top = -129.0
+offset_right = -29.0
+offset_bottom = -26.0
+grow_horizontal = 2
+grow_vertical = 0
