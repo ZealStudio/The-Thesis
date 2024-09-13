@@ -19,10 +19,12 @@ script = ExtResource("1_ho73g")
 [node name="Option1" type="Button" parent="OptionHBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
+text = "Throw Egg"
 
 [node name="Option2" type="Button" parent="OptionHBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
+text = "Walk Away"
 
 [connection signal="pressed" from="OptionHBoxContainer/Option1" to="OptionHBoxContainer" method="_on_option_1_pressed"]
 [connection signal="pressed" from="OptionHBoxContainer/Option2" to="OptionHBoxContainer" method="_on_option_2_pressed"]

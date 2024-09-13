@@ -33,6 +33,7 @@ script = ExtResource("1_x1v2y")
 
 [node name="StartGame" type="TextureButton" parent="Control"]
 modulate = Color(0, 0.388235, 1, 1)
+layout_mode = 0
 offset_left = 987.0
 offset_top = 487.0
 offset_right = 1115.0
@@ -42,12 +43,14 @@ script = ExtResource("2_jwgxu")
 
 [node name="Quit" type="TextureButton" parent="Control"]
 modulate = Color(1, 0, 1, 1)
+layout_mode = 0
 offset_right = 128.0
 offset_bottom = 128.0
 texture_normal = ExtResource("1_dd2xb")
 script = ExtResource("3_73mn4")
 
 [node name="Option" type="TextureButton" parent="Control" node_paths=PackedStringArray("options_menu")]
+layout_mode = 0
 offset_left = 977.0
 offset_top = 16.0
 offset_right = 1105.0

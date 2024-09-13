@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 GameManager="*res://Managers/game_manager.gd"
 AudioManager="*res://Managers/audio_manager.gd"
+StoryManager="*res://Managers/story_manager.gd"
 
 [input]
 

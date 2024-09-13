@@ -1,8 +1,0 @@
-[gd_resource type="Resource" script_class="Path" load_steps=2 format=3 uid="uid://dd7yxcxk6us4c"]
-
-[ext_resource type="Script" path="res://OptionSystem/path_resource.gd" id="1_dnwou"]
-
-[resource]
-script = ExtResource("1_dnwou")
-paths = Array[ExtResource("1_dnwou")]([])
-story_component = ""
