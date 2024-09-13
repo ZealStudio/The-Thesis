@@ -23,10 +23,14 @@ anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="BrightnessNode" type="Sprite2D" parent="Control"]
+[node name="BrightnessNode" type="TextureRect" parent="Control"]
 material = SubResource("CanvasItemMaterial_ynuew")
 use_parent_material = true
-position = Vector2(574, 320)
+layout_mode = 0
+offset_left = -5.0
+offset_top = -10.0
+offset_right = 123.0
+offset_bottom = 118.0
 scale = Vector2(8.96875, 5.10938)
 texture = ExtResource("1_dd2xb")
 script = ExtResource("1_x1v2y")
