@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://bpuxqyq35cwrj"]
 
 [ext_resource type="Script" path="res://the-thesis/Player/player.gd" id="1_kwbks"]
-[ext_resource type="Texture2D" uid="uid://dpn73mdpbvem" path="res://icon.svg" id="2_nje6p"]
+[ext_resource type="Texture2D" uid="uid://oykb0ntj4lny" path="res://Assets/Art/Background Art/PlayerSpriteSheet-Sheet.png" id="2_m1vde"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_5pdag"]
 
@@ -12,8 +12,10 @@ script = ExtResource("1_kwbks")
 shape = SubResource("CapsuleShape2D_5pdag")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.132813, 0.132813)
-texture = ExtResource("2_nje6p")
+texture_filter = 1
+scale = Vector2(0.471397, 0.472373)
+texture = ExtResource("2_m1vde")
+hframes = 11
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite2D"]
 
