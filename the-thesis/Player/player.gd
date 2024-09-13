@@ -41,10 +41,11 @@ func _physics_process(delta):
 	if direction:
 		velocity.x = direction * SPEED
 		#$"Sprite2D/Player Animation".play("Walk")
-	elif updown:
+	if updown:
 		velocity.y = updown * SPEED
-	else:
+	elif direction == 0:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
+	if Input.is_action_just_released("ui_up") or Input.is_action_just_released("ui_down"):
 		velocity.y = move_toward(velocity.y, 0, SPEED)
 		#$"Sprite2D/Player Animation".play("Idle")
 

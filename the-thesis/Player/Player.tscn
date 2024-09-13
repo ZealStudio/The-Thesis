@@ -5,11 +5,14 @@
 [ext_resource type="PackedScene" uid="uid://x1daxqpwy6wv" path="res://the-thesis/Player/GameUi.tscn" id="3_elivj"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_5pdag"]
+radius = 7.0
+height = 14.0
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 script = ExtResource("1_kwbks")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 8)
 shape = SubResource("CapsuleShape2D_5pdag")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
