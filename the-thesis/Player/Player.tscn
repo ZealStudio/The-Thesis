@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://bpuxqyq35cwrj"]
+
+[ext_resource type="Script" path="res://the-thesis/Player/player.gd" id="1_kwbks"]
+[ext_resource type="Texture2D" uid="uid://oykb0ntj4lny" path="res://Assets/Art/Background Art/PlayerSpriteSheet-Sheet.png" id="2_m1vde"]
+[ext_resource type="PackedScene" uid="uid://x1daxqpwy6wv" path="res://the-thesis/Player/GameUi.tscn" id="3_elivj"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_5pdag"]
+radius = 7.0
+height = 14.0
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_kwbks")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 8)
+shape = SubResource("CapsuleShape2D_5pdag")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(0.471397, 0.472373)
+texture = ExtResource("2_m1vde")
+hframes = 11
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(3.75, 3.75)
+
+[node name="Control" parent="." instance=ExtResource("3_elivj")]
+offset_top = 87.0
+offset_bottom = 87.0
+scale = Vector2(0.26698, 0.267858)
