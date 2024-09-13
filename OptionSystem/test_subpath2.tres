@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="Path" load_steps=2 format=3 uid="uid://bjtsak0sycewt"]
+
+[ext_resource type="Script" path="res://OptionSystem/path_resource.gd" id="1_pa0xk"]
+
+[resource]
+script = ExtResource("1_pa0xk")
+paths = Array[ExtResource("1_pa0xk")]([])
+story_component = ""

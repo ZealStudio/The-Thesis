@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="Paths" load_steps=2 format=3 uid="uid://cqs6w44bbku8r"]
+
+[ext_resource type="Script" path="res://OptionSystem/path_resource.gd" id="1_egfdr"]
+
+[resource]
+script = ExtResource("1_egfdr")
+paths = Array[ExtResource("1_egfdr")]([])
