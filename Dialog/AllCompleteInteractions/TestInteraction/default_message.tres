@@ -7,6 +7,5 @@
 script = ExtResource("1_0n0el")
 avatars = Array[Texture]([ExtResource("1_7jqn5")])
 dialog_slides = Array[String](["HAHAHHAAAA", "hi :)", "throw egg?"])
-option_check = true
 options = Array[String](["You decide to throw egg", "You dont throw egg, you throw chair", "you a lil hoe and run"])
-option_title = Array[String](["throws_egg", "throws_chair", "none"])
+option_titles = Array[String](["throws_egg", "throws_chair", "none"])

@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://bvpic35uts8s1"]
+
+[ext_resource type="Script" path="res://option_button.gd" id="1_qo2lk"]
+
+[node name="OptionButton" type="Button"]
+offset_right = 8.0
+offset_bottom = 8.0
+script = ExtResource("1_qo2lk")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

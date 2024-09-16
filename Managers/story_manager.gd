@@ -12,3 +12,12 @@ var story_dict: Dictionary = {
 	"throws_egg" = false,
 	"throws_chair" = false
 }
+
+
+func check_story_dictionary(option_title):
+	print(option_title)
+	if story_dict.has(option_title):
+		print(story_dict[option_title])
+		story_dict[option_title] = true
+		print(story_dict[option_title])
+	

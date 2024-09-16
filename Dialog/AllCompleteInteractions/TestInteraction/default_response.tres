@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Dialogue" load_steps=2 format=3 uid="uid://fjergp1ov4dl"]
+
+[ext_resource type="Script" path="res://Dialog/dialogue.gd" id="1_vii85"]
+
+[resource]
+script = ExtResource("1_vii85")
+avatars = Array[Texture]([])
+dialog_slides = Array[String]([])
+option_check = false
+options = Array[String]([])
+option_title = Array[String]([])
