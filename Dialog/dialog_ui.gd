@@ -12,7 +12,7 @@ extends Control
 
 var option_button_preload: PackedScene = preload("res://Dialog/option_button.tscn")
 
-var current_dialog_index: int
+var current_dialog_index: int = 0
 var current_slide_index: int = 0
 var options_shown: bool = false
 func _ready():
@@ -49,8 +49,38 @@ func show_options():
 			#add a .initialize() instead and add values in the button script instead of here
 			new_button.text = current_dialogue_tres.options[i]
 			new_button.name = current_dialogue_tres.option_titles[i]
+			new_button.index = i + 1
 			button_container.add_child(new_button)
 			options_shown = true
+
+
+func option_pressed(option: Button):
+	StoryManager.check_story_dictionary(option.name)
+	await get_tree().create_timer(2).timeout
+	selected_option(option)
+
+
+func selected_option(option):
+	if current_dialog_index < current_interaction_tres.dialog_array.size():
+		print(current_dialog_index)
+		current_dialog_index += option.index
+		print(current_dialog_index)
+		print(option.index)
+		current_dialogue_tres = current_interaction_tres.dialog_array[current_dialog_index]
+		current_slide_index = 0
+		clear_buttons()
+		text_bg.visible = true
+		show_slide()
+	else:
+		GameManager.emit_dialog_finished()
+
+
+func clear_buttons():
+	for child in button_container.get_children():
+		if child is Button:
+			child.queue_free()
+		else:
+			print_debug("Child is not of type \"Button\"")
 
 
 func on_dialog_finished():
@@ -62,7 +92,6 @@ func on_dialog_finished():
 func on_dialog_initiated(complete_interaction: CompleteInteraction):
 	runtime_data.current_gameplay_state = GameManager.GameState.IN_DIALOG
 	current_interaction_tres = complete_interaction
-	current_dialog_index = current_interaction_tres.index
 	current_dialogue_tres = current_interaction_tres.dialog_array[current_dialog_index]
 	current_slide_index = 0
 	show_slide()

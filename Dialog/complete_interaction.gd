@@ -28,7 +28,4 @@ class_name CompleteInteraction
 #present option
 #based on evaluation of option tell CompleteInteraction which then play next
 
-
-@export var index: int = 0
-
 @export var dialog_array: Array[Dialogue]
