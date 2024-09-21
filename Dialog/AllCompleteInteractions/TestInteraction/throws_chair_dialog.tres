@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Dialogue" load_steps=3 format=3 uid="uid://pkk07ixqqpwi"]
+
+[ext_resource type="Texture2D" uid="uid://dpn73mdpbvem" path="res://icon.svg" id="1_o8ip8"]
+[ext_resource type="Script" path="res://Dialog/dialogue.gd" id="1_rcyxm"]
+
+[resource]
+script = ExtResource("1_rcyxm")
+avatars = Array[Texture]([ExtResource("1_o8ip8")])
+dialog_slides = Array[String](["run", "you threw a chair!!", "oh my"])
+options = Array[String]([])
+option_titles = Array[String]([])

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="CompleteInteraction" load_steps=7 format=3 uid="uid://b1ywuey3esdwn"]
+
+[ext_resource type="Script" path="res://Dialog/dialogue.gd" id="1_j0ars"]
+[ext_resource type="Script" path="res://Dialog/complete_interaction.gd" id="2_xhvcy"]
+[ext_resource type="Resource" uid="uid://cfpt2clm4ipt" path="res://Dialog/AllCompleteInteractions/TestInteraction/default_message.tres" id="2_ywnjh"]
+[ext_resource type="Resource" uid="uid://xd5j2l7mq2ye" path="res://Dialog/AllCompleteInteractions/TestInteraction/throws_egg_dialog.tres" id="3_d2gb2"]
+[ext_resource type="Resource" uid="uid://pkk07ixqqpwi" path="res://Dialog/AllCompleteInteractions/TestInteraction/throws_chair_dialog.tres" id="4_2ejsh"]
+[ext_resource type="Resource" uid="uid://fjergp1ov4dl" path="res://Dialog/AllCompleteInteractions/TestInteraction/default_response.tres" id="5_haodp"]
+
+[resource]
+script = ExtResource("2_xhvcy")
+dialog_array = Array[ExtResource("1_j0ars")]([ExtResource("2_ywnjh"), ExtResource("3_d2gb2"), ExtResource("4_2ejsh"), ExtResource("5_haodp")])

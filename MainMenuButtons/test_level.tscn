@@ -17,12 +17,22 @@ blend_mode = 3
 [node name="AudioManager" parent="." instance=ExtResource("1_jto6r")]
 script = ExtResource("2_dxvoo")
 
-[node name="BrightnessNode" type="ColorRect" parent="."]
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="BrightnessNode" type="TextureRect" parent="Control"]
 material = SubResource("CanvasItemMaterial_ynuew")
 use_parent_material = true
-offset_right = 1149.0
-offset_bottom = 645.0
-color = Color(0.529067, 0.529067, 0.529067, 1)
+layout_mode = 0
+offset_left = -5.0
+offset_top = -10.0
+offset_right = 123.0
+offset_bottom = 118.0
+scale = Vector2(8.96875, 5.10938)
+texture = ExtResource("1_dd2xb")
 script = ExtResource("1_x1v2y")
 
 [node name="StartGame" type="TextureButton" parent="BrightnessNode"]
@@ -43,7 +53,7 @@ offset_bottom = 128.0
 texture_normal = ExtResource("1_dd2xb")
 script = ExtResource("3_73mn4")
 
-[node name="Option" type="TextureButton" parent="BrightnessNode" node_paths=PackedStringArray("options_menu")]
+[node name="Option" type="TextureButton" parent="Control" node_paths=PackedStringArray("options_menu")]
 layout_mode = 0
 offset_left = 977.0
 offset_top = 16.0

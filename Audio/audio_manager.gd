@@ -13,3 +13,6 @@ func change_volume(value):
 	else:
 		volume = (value - 99) / 5
 	set_deferred("volume_db", volume)
+
+
+#global

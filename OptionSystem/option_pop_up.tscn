@@ -1,0 +1,30 @@
+[gd_scene load_steps=2 format=3 uid="uid://dfxqsg7bbnw85"]
+
+[ext_resource type="Script" path="res://OptionSystem/option_h_box_container.gd" id="1_ho73g"]
+
+[node name="OptionPopUp" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="OptionHBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 636.0
+offset_bottom = 306.0
+script = ExtResource("1_ho73g")
+
+[node name="Option1" type="Button" parent="OptionHBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Throw Egg"
+
+[node name="Option2" type="Button" parent="OptionHBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Walk Away"
+
+[connection signal="pressed" from="OptionHBoxContainer/Option1" to="OptionHBoxContainer" method="_on_option_1_pressed"]
+[connection signal="pressed" from="OptionHBoxContainer/Option2" to="OptionHBoxContainer" method="_on_option_2_pressed"]

@@ -1,0 +1,62 @@
+[gd_scene load_steps=4 format=3 uid="uid://d2k1ut06k4t7u"]
+
+[ext_resource type="Script" path="res://Dialog/dialog_ui.gd" id="1_oprq5"]
+[ext_resource type="Resource" uid="uid://bdb4stcom6f82" path="res://Managers/runtime_data.tres" id="2_k630s"]
+[ext_resource type="Resource" uid="uid://b1ywuey3esdwn" path="res://Dialog/AllCompleteInteractions/TestInteraction/default_interaction.tres" id="3_kedv8"]
+
+[node name="DialogUI" type="Control" node_paths=PackedStringArray("text_bg", "avatar", "dialogue_text", "button_container")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_oprq5")
+text_bg = NodePath("TextBG")
+avatar = NodePath("TextBG/Avatar")
+dialogue_text = NodePath("TextBG/DialogueText")
+runtime_data = ExtResource("2_k630s")
+button_container = NodePath("ButtonContainer")
+test_interaction = ExtResource("3_kedv8")
+
+[node name="TextBG" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.993
+anchor_top = 1.0
+anchor_right = 0.993
+anchor_bottom = 1.0
+offset_left = -420.936
+offset_top = -183.0
+offset_right = 8.06396
+offset_bottom = -1.0
+
+[node name="DialogueText" type="Label" parent="TextBG"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.512
+anchor_top = 0.497
+anchor_right = 0.512
+anchor_bottom = 0.497
+offset_left = -190.648
+offset_top = -67.454
+offset_right = 190.352
+offset_bottom = 67.546
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+
+[node name="Avatar" type="TextureRect" parent="TextBG"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.412
+anchor_bottom = 0.412
+offset_left = -91.0
+offset_top = -19.984
+offset_right = -51.0
+offset_bottom = 20.016
+
+[node name="ButtonContainer" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 224.0
+offset_top = 376.0
+offset_right = 1024.0
+offset_bottom = 576.0
